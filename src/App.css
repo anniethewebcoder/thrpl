@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
-}
+/*
+#DB6356 - RED
+#F1A57F - ORANGE
+#FDECA7 - YELLOW
+#709FBA - LIGHT BLUE
+#3C7FA6 - BLUE
+#323E66 - DARK BLUE
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+Pictures by 
+Taryn Elliott - outdoor
+Andrea Piacquadio - bike, camping
+Tobi - hike
+cottonbro studio - movie
+Klaus Nielsen = pasta
+Christina Morillo - code
+Pavel Danilyuk - paint
+fauxels - wine tour
+Helena Lopes - book club
+Kindel Media
+*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.testfont {
+  font-family: 'Summer Light', serif;
+  color: red;
 }
