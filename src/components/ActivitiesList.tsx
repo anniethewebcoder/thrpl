@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
-import { List, ListItem, ListItemText, ListItemAvatar, ListItemIcon } from "@mui/material";
+import { Container, List, ListItem, ListItemText, ListItemIcon, Typography } from "@mui/material";
 
-import { LocalActivity } from "@mui/icons-material";
+import { LocalActivity, CircleOutlined} from "@mui/icons-material";
 
 export interface Activity {
   id: number;
@@ -19,10 +19,9 @@ export default function ActivitiesList(props: ActivitiesListProps): ReactElement
 
   return (
     <>
+    <Container maxWidth="sm">
         <List sx={{
-            width: '100%',
-            maxWidth: 500,
-            bgcolor: 'background.paper'
+            width: '100%'
         }}>
             {props.activities.map((activity) => (
                 <ListItem 
@@ -30,20 +29,24 @@ export default function ActivitiesList(props: ActivitiesListProps): ReactElement
                     alignItems="center"
                     divider={true}
                     sx={{
-                        padding: 2
+                        margin: 2,
                     }}
                 >
                     <ListItemIcon>
-                        <LocalActivity />
+                        <LocalActivity fontSize="large" />
                     </ListItemIcon>
 
-                    <ListItemText 
-                        primary={activity.name} 
+                    <ListItemText
+                        primary={activity.name}
                         secondary={
                             <>
-                                [{activity.category}] {activity.description}
+                                <p>{activity.category}</p>
+                                <p>{activity.description}</p>
                             </> 
                         }
+                        sx={{
+                            margin: 1
+                        }}
                     />
                     <ListItemIcon
                         sx={{
@@ -61,6 +64,7 @@ export default function ActivitiesList(props: ActivitiesListProps): ReactElement
                 </ListItem>
             ))}
         </List>
+        </Container>
     </>
   );
 }
