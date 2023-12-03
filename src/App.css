@@ -1,10 +1,10 @@
 /*
-#DB6356 - RED
-#F1A57F - ORANGE
-#FDECA7 - YELLOW
-#709FBA - LIGHT BLUE
-#3C7FA6 - BLUE
-#323E66 - DARK BLUE
+#DB6356 - RED (219, 99 ,86)
+#F1A57F - ORANGE (241, 165, 127)
+#FDECA7 - YELLOW (253, 236, 167)
+#709FBA - LIGHT BLUE (112, 159, 186)
+#3C7FA6 - BLUE (60, 127, 166)
+#323E66 - DARK BLUE (50, 62, 102)
 
 Pictures by 
 Taryn Elliott - outdoor
@@ -18,8 +18,28 @@ fauxels - wine tour
 Helena Lopes - book club
 Kindel Media
 */
+:root {
+  --red-color: #DB6356;
+  --orange-color: #F1A57F;
+  --yellow-color: #FDECA7;
+  --light-blue-color: #709FBA;
+  --blue-color: #3C7FA6;
+  --dark-blue-color: #323E66;
+}
 
 .testfont {
   font-family: 'Summer Light', serif;
   color: red;
+}
+
+body {
+  background-image: url('./media/web/light-paper-fibers.png');
+}
+
+
+
+img {
+  width: 100%;
+  height: auto;
+  opacity: 50%;
 }

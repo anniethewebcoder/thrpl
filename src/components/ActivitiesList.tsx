@@ -1,8 +1,8 @@
 import React, { ReactElement } from "react";
-import { Container, List, ListItem, ListItemText, ListItemIcon, Typography } from "@mui/material";
+import { createTheme, List, ListItem, ListItemText, ListItemIcon, Typography } from "@mui/material";
 
 import { LocalActivity, CircleOutlined} from "@mui/icons-material";
-
+import EventDetail from "./EventDetail";
 export interface Activity {
   id: number;
   name: string;
@@ -16,10 +16,19 @@ interface ActivitiesListProps {
 }
 
 export default function ActivitiesList(props: ActivitiesListProps): ReactElement {
+    // const theme = createTheme({
+    //     palette: {
+    //         primary: {
 
+    //         },
+    //         secondary: {
+                
+    //         }
+    //     }
+    // })
   return (
     <>
-    <Container maxWidth="sm">
+        <EventDetail />
         <List sx={{
             width: '100%'
         }}>
@@ -64,23 +73,6 @@ export default function ActivitiesList(props: ActivitiesListProps): ReactElement
                 </ListItem>
             ))}
         </List>
-        </Container>
     </>
   );
 }
-
-{/* <h1>October Potluck Dinner</h1>
-<p>Date: Oct 20 4pm to 6pm</p>
-<p>Activities List</p>
-<ul>
-  {props.activities.map((activity) => (
-    <li key={activity.id}>
-      <h2>Activity: {activity.name}</h2>
-      <p>Description: {activity.description}</p>
-      <p>Category: {activity.category}</p>
-      <p>
-        Vote Count: {activity.voteCount}
-      </p>
-    </li>
-  ))}
-</ul> */}
